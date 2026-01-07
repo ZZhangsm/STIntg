@@ -1,4 +1,4 @@
-# STUltra
+<!-- # STUltra -->
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/ZZhangsm/STUltra)
-[![Downloads](https://img.shields.io/badge/Downloads-pypi-orange.svg)](https://pypi.org/project/STUltra/)
+<!-- [![Downloads](https://img.shields.io/badge/Downloads-pypi-orange.svg)](https://pypi.org/project/STUltra/) -->
 <!-- [![DOI](https://img.shields.io/badge/DOI-Coming%20Soon-yellow.svg)](https://github.com/ZZhangsm/STUltra) -->
 
 </div>
@@ -68,10 +68,10 @@ cd STUltra-main
 
 
 ```
-#create an environment called STUltra
+# create an environment called STUltra
 conda create -n env_STUltra python=3.8
 
-#activate your environment
+# activate your environment
 conda activate env_STUltra
 ```
 
@@ -82,12 +82,11 @@ Install all the required packages.
 
 For Linux
 ```
+# Install Python packages
+
 pip install -r requirements.txt
 ```
-
-
-# Install Python packages
-pip install -r requirements.txt#### 4. Install additional dependencies
+#### 4. Install additional dependencies
 
 **mclust algorithm:**
 - Python: Install `rpy2` package - see [rpy2 documentation](https://pypi.org/project/rpy2/)

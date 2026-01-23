@@ -118,6 +118,17 @@ If you have any questions, please feel free to contact us:
 
 ---
 
-<!-- 
 ## 📖 Citation
--->
+
+If you use STUltra in your research, please cite:
+
+```bibtex
+@article{zhang2025stultra,
+  title={STUltra: scalable and accurate integration for subcellular-level spatial omics data},
+  author={Zhang, Songming and Luo, Shifu and Luo, Yuxiao and Su, Shuquan and Liu, Ling and Li, Wujun and Li, Jinyan},
+  journal={bioRxiv},
+  pages={2025--12},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```

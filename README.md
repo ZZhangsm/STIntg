@@ -106,7 +106,8 @@ python setup.py install
 Step-by-step tutorials are included in the `Tutorials` folder to demonstrate how to use STUltra:
 
 - **Tutorial 1**: Integrating 8 mouse embryo slices sampled at the time stages of E9.5-E16.5 (Stereo-seq)
-- **Tutorial 2**: Integrating two Xenium breast cancer samples
+- **Tutorial 2**: Integrating two Xenium breast cancer samples.
+- **Tutorial 3**: Integrating two Visium HD colorectal cancer samples from the 10x Genomics official dataset (total cell count > 1M)
 
 ---
 

@@ -37,14 +37,10 @@ High-resolution spatial transcriptomics (ST) generates large-scale datasets acro
 
 ### ✨ Key Features
 
-- 🔬 **Subcellular Resolution**: Designed for ultra-high-resolution spatial transcriptomics data with extreme sparsity
 - 🚀 **Million-scale Scalability**: Efficiently processes datasets containing over **1,000,000** spatial locations
-- 🎯 **Accurate Domain Detection**: Learns robust spatial representations and consistently outperforms existing integration methods
 - 🔄 **Cross-platform Integration**: Supports Visium HD, Xenium, Stereo-seq, and other high-resolution spatial transcriptomics platforms
 - 🧩 **Robust Batch Correction**: Integrates samples across spatial, temporal, and biological conditions while reducing batch effects
-- 🌍 **Spatial Context Modeling**: Uses interval-sampled hypergraphs to capture both local tissue neighborhoods and cross-sample biological contexts
 - 🧬 **Disease Trait Mapping**: Integrates GWAS summary statistics to identify trait-associated spatial domains across tissues
-- 🚧 **Coming Soon**: GWAS mapping code is being organized and will be released soon.
 
 > **📢 Note:** The GWAS trait mapping module is currently being cleaned up and documented. The corresponding code will be released in a later update.
 ---

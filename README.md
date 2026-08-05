@@ -3,7 +3,7 @@
 <div align="center">
 
 
-# **STUltra: scalable and accurate integration for subcellular-level spatial omics data**
+# **STUltra: Mapping disease traits onto  spatiotemporal domain landscapes through scalable multi-sample integration of spatial transcriptomics**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -33,16 +33,20 @@
 
 Subcellular-level spatial transcriptomics data contain unprecedented contexts to uncover finer cellular clusters and their interactions. However, integrative analysis at subcellular resolution faces many challenges due to its ultra-large volume, ultra-high sparsity, and severe susceptibility to technical conditions and batch effects.
 
-We introduce **STUltra**, a scalable and accurate framework for integrating subcellular-level spatial omics data across spatial, temporal, and biomedical dimensions. Built on contrastive learning, STUltra combines a robust graph autoencoder with an interval sampling step to enhance batch-effect correction, enable clear characterization of shared and condition-specific tissue structures, and provide seamless extension to super-resolution platforms such as **Visium HD**, **Xenium**, and **Stereo-seq**.
+We introduce **STUltra**, a scalable hypergraph framework that integrates multi-sample ST data for precise domain detection and genome-wide association study (GWAS)-based disease trait mapping. From ST datasets, STUltra first constructs interval-sampled integrative hypergraphs, in which hyperedges capture tissue neighborhoods within the slices as well as shared biological contexts across the slices. It then combines a robust graph autoencoder with contrastive learning to learn batch-corrected, spatially informed embeddings for identifying spatial domains across the tissue sections. These embeddings are then coupled with GWAS statistics to map trait-associated signals onto the integrated tissue sub-structure landscapes spanning different sections, developmental stages, and disease conditions. 
 
 ### ✨ Key Features
 
-- 🔬 **Subcellular Resolution**: Handles ultra-large volume and ultra-high sparsity data
-- 🚀 **Scalable**: Processes datasets containing over 1,000,000 cells efficiently
-- 🎯 **Accurate**: Outperforms existing tools in both accuracy and efficiency
-- 🔄 **Multi-platform Support**: Compatible with Visium HD, Xenium, Stereo-seq and other subcellular platforms 
-- 📊 **Batch Correction**: Robust batch-effect correction across spatial, temporal, and biomedical dimensions
+- 🔬 **Subcellular Resolution**: Designed for ultra-high-resolution spatial transcriptomics data with extreme sparsity
+- 🚀 **Million-scale Scalability**: Efficiently processes datasets containing over **1,000,000** spatial locations
+- 🎯 **Accurate Domain Detection**: Learns robust spatial representations and consistently outperforms existing integration methods
+- 🔄 **Cross-platform Integration**: Supports Visium HD, Xenium, Stereo-seq, and other high-resolution spatial transcriptomics platforms
+- 🧩 **Robust Batch Correction**: Integrates samples across spatial, temporal, and biological conditions while reducing batch effects
+- 🌍 **Spatial Context Modeling**: Uses interval-sampled hypergraphs to capture both local tissue neighborhoods and cross-sample biological contexts
+- 🧬 **Disease Trait Mapping**: Integrates GWAS summary statistics to identify trait-associated spatial domains across tissues
+- 🚧 **Coming Soon**: GWAS mapping code is being organized and will be released soon.
 
+> **📢 Note:** The GWAS trait mapping module is currently being cleaned up and documented. The corresponding code will be released in a later update.
 ---
 
 ## 💻 Installation
@@ -119,17 +123,3 @@ If you have any questions, please feel free to contact us:
 
 ---
 
-## 📖 Citation
-
-If you use STUltra in your research, please cite:
-
-```bibtex
-@article{zhang2025stultra,
-  title={STUltra: scalable and accurate integration for subcellular-level spatial omics data},
-  author={Zhang, Songming and Luo, Shifu and Luo, Yuxiao and Su, Shuquan and Liu, Ling and Li, Wujun and Li, Jinyan},
-  journal={bioRxiv},
-  pages={2025--12},
-  year={2025},
-  publisher={Cold Spring Harbor Laboratory}
-}
-```

@@ -31,9 +31,9 @@
 
 ![STUltra_Overview](https://github.com/ZZhangsm/STUltra/blob/main/overview.jpg)
 
-Subcellular-level spatial transcriptomics data contain unprecedented contexts to uncover finer cellular clusters and their interactions. However, integrative analysis at subcellular resolution faces many challenges due to its ultra-large volume, ultra-high sparsity, and severe susceptibility to technical conditions and batch effects.
+High-resolution spatial transcriptomics (ST) generates large-scale datasets across multiple tissue sections, developmental stages, and disease conditions, making integration challenging due to biological heterogeneity and batch effects.
 
-We introduce **STUltra**, a scalable hypergraph framework that integrates multi-sample ST data for precise domain detection and genome-wide association study (GWAS)-based disease trait mapping. From ST datasets, STUltra first constructs interval-sampled integrative hypergraphs, in which hyperedges capture tissue neighborhoods within the slices as well as shared biological contexts across the slices. It then combines a robust graph autoencoder with contrastive learning to learn batch-corrected, spatially informed embeddings for identifying spatial domains across the tissue sections. These embeddings are then coupled with GWAS statistics to map trait-associated signals onto the integrated tissue sub-structure landscapes spanning different sections, developmental stages, and disease conditions. 
+**STUltra** is a scalable hypergraph framework for multi-sample ST integration, spatial domain detection, and GWAS-based trait mapping. By combining interval-sampled hypergraphs, robust graph representation learning, and contrastive learning, STUltra learns batch-corrected spatial embeddings that enable accurate domain identification and disease trait mapping across integrated tissue landscapes.
 
 ### ✨ Key Features
 
